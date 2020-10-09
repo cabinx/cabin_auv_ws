@@ -1,0 +1,6 @@
+1、在cmakelist中，由于eigen安装配置的混乱，，把FindEigen3.cmake 放到cmaklist目录，且在cmakelist中添加了如下改动：
+   set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+   include_directories($ {EIGEN3_INCLUDE_DIRS})
+   移植到其它机器时要注意还原改动，并根据当前机器的Eigen配置修改cmakelist；
+
+2、注意cfg文件的package名与cmakelist及程序中的对应；

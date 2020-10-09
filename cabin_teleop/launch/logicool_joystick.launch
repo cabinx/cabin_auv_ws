@@ -1,0 +1,11 @@
+<launch>
+  <!--launch the joystick-->
+  <node pkg="joy" type="joy_node" name="joy_stick" output="screen" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+  </node>
+  
+  <!--joystick to netLoad msg-->
+  <node pkg="cabin_teleop" type="logicool_controller" name="logicool_controller" output="screen" >
+  </node>
+
+</launch>

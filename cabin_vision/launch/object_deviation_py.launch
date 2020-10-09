@@ -1,0 +1,8 @@
+<launch>
+  <arg name="properties_file_" value="$(find usb_cam)/cfg/camera.yaml" />
+  <node name="object_deviation_py" pkg="cabin_vision" type="object_deviation_py.py" output="screen" >
+    <!--param name="image_width" value="800" /-->
+    <!--param name="image_height" value="600" /-->
+    <param name="properties_file" type="string" value="$(arg properties_file_)" />
+  </node>
+</launch>

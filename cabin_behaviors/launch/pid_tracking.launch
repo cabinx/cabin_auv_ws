@@ -1,0 +1,16 @@
+  <!--The PID paraments is limited among [-1,1], please modify the cfg/pid_tracking.cfg and catkin_make the package if need to break the limit-->
+<launch>
+  <!--arg name="properties_file_" value="$(find usb_cam)/cfg/camera.yaml" /-->
+  <node name="pid_tracking" pkg="cabin_behaviors" type="pid_tracking" output="screen" >
+    <param name="pid_p_mz" type="double" value="0.1" />
+    <param name="pid_i_mz" type="double" value="0" />
+    <param name="pid_d_mz" type="double" value="0.05" />
+    <param name="pid_p_z" type="double" value="0.1" />
+    <param name="pid_i_z" type="double" value="0" />
+    <param name="pid_d_z" type="double" value="0.05" />
+    <param name="safe_area_x" type="double" value="80" />
+    <param name="safe_area_y" type="double" value="600" />
+    <param name="tracking_switch" type="bool" value="false" />
+    <!--param name="properties_file" type="string" value="$(arg properties_file_)" /-->
+  </node>
+</launch>

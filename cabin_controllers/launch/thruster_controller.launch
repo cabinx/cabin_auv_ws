@@ -1,0 +1,9 @@
+<launch>
+  <!--arg name="properties_file" value="$(find cabin_controllers)/cfg/vehicle_properties.yaml" /-->
+  <!--arg name="properties_file" value="$(find cabin_controllers)/cfg/cabinVehicleProperties.yaml" /-->
+  <arg name="properties_file" value="$(find cabin_controllers)/cfg/bluerov_heavy_properties.yaml" />
+
+  <node pkg="cabin_controllers" type="thruster_controller" name="thruster_controller" output="screen" >
+    <param name="properties_file" type="string" value="$(arg properties_file)" />
+  </node>
+</launch>

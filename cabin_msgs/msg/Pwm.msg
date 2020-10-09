@@ -1,0 +1,8 @@
+int16 vector_port_fwd
+int16 vector_stbd_fwd
+int16 vector_port_aft
+int16 vector_stbd_aft
+int16 heave_port_fwd
+int16 heave_stbd_fwd
+int16 heave_port_aft
+int16 heave_stbd_aft

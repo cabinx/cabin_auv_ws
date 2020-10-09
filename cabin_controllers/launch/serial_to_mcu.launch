@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="cabin_controllers" name="serial_to_mcu" type="serial_to_mcu" output="screen">
+      <param name="serial_port" type="string" value="/dev/ttyUSB0" />
+      <param name="baudrate" type="int" value="115200" />
+    </node>
+</launch>

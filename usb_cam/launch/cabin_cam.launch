@@ -1,0 +1,12 @@
+<launch>
+  <arg name="properties_file_" value="$(find usb_cam)/cfg/camera.yaml" />
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <!--param name="image_width" value="800" /-->
+    <!--param name="image_height" value="600" /-->
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+    <param name="properties_file" type="string" value="$(arg properties_file_)" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+  <!--arg name="properties_file" value="$(find cabin_controllers)/cfg/vehicle_properties.yaml" /-->
+  <arg name="properties_file" value="$(find cabin_controllers)/cfg/bluerov_heavy_properties.yaml" />
+  <node pkg="cabin_controllers" type="pwm_controller" name="pwm_controller" output="screen" >
+    <rosparam command="load" file="$(find cabin_controllers)/cfg/thruster_force_vs_pwm.yaml" />
+    <param name="properties_file" type="string" value="$(arg properties_file)" />
+  </node>
+</launch>

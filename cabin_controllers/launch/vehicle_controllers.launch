@@ -1,0 +1,13 @@
+<launch>
+  <!--netLoad to motors matrix(8 motors)-->
+  <include file="$(find cabin_controllers)/launch/thruster_controller.launch">
+  </include>   
+
+  <!--motors matrix to the pwm matrix-->
+  <include file="$(find cabin_controllers)/launch/pwm_controller.launch" >
+  </include>
+  
+  <!--pwm matrix sent to the mcu through serial-->
+  <include file="$(find cabin_controllers)/launch/serial_to_mcu.launch">
+  </include>
+</launch>
