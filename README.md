@@ -1,4 +1,5 @@
 # cabin_auv_ws
+    (I will )
     As rarely opensource rov project, ardusub is powerful. It works perfectly on bluerov.   
     But I'm not familier to develop embedded applications. So I find it difficult to achieve my goals on the pixhawk to me, such as arbitrarily adjust the thrusters layout, use diffrent types of thrusters and so on.   
     On the other hand, I think the bluerov framewok, pixhawk(ardusub)---respberry 3B(can not upgrade)---QGroundControl, is very redundancy. The framework is not friendly both to some developers and some AI applications.
