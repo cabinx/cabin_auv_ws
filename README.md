@@ -3,7 +3,9 @@
   
   ROS is widely used in the robot area. It's easy to develop, and has many successful applications in AI area. I hope to DIY my own ROV/AUV based on ros in the future. So I develop a simple demo for rov tracking object to verify the feasibility.
   
-  I test the demo on a bluerov, replace the pixhawk with a stm32 to process the pwm wave to control the thrusters. The main target is to verify the feasibility of developing rov/auv soft framework on ros, since I can change the hardware freely in the future. So I ignore many problems, such as depth hold, the time delay caused by video transmission and so on. From this perspective, the test result is not bad.  
+  I test the demo on a bluerov, replace the pixhawk with a stm32 to process the pwm wave to control the thrusters. The main target is to verify the feasibility of developing rov/auv soft framework on ros, since I can change the hardware freely in the future. So I ignore many problems, such as depth hold, the time delay caused by video transmission and so on. From this perspective, the test result is not bad.
+  
+  As the test environment, the ground pc is ubuntu 18.04, and the raspberry 3B on the bluerov is ubuntu mate 18.04. The ros version is melodic.
 
   
   ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/yaw.gif)![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/sink.gif)
