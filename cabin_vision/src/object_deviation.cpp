@@ -27,7 +27,7 @@ ObjectDeviation::ObjectDeviation() : nh("~"){
 void ObjectDeviation::BoundingBoxSub(const darknet_ros_msgs::BoundingBoxes msg){
     deviation_msg.header.stamp = ros::Time::now();
     deviation_msg.point.x = (msg.bounding_boxes[0].xmin + msg.bounding_boxes[0].xmax) / 2.0 - image_width / 2.0;
-    deviation_msg.point.y = (msg.bounding_boxes[0].ymin + msg.bounding_boxes[0].ymax) / 2.0 - image_width / 2.0;
+    deviation_msg.point.y = (msg.bounding_boxes[0].ymin + msg.bounding_boxes[0].ymax) / 2.0 - image_height / 2.0;
     deviation_pub.publish(deviation_msg);
 }
 
