@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>cabin_controllers</name>
+  <name>cabin_teleop</name>
   <version>0.0.1</version>
-  <description>Controllers for cabin's test underwater vehicle</description>
+  <description>Joystick controller for cabin's test underwater vehicle</description>
 
   <maintainer email="xiekb@pcl.ac.cn">Cabin</maintainer>
 
   <license>BSD</license>
-
 
   <!--<url type="website">http://go.osu.edu/uwrt</url> -->
   <!--<url type="repository">http://github.com/osu-uwrt/riptide</url> -->
@@ -18,15 +17,15 @@
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_depend>eigen</build_depend>
-  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>cabin_msgs</build_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>cabin_msgs</build_export_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
-  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>cabin_msgs</exec_depend>
 
   <export>
   </export>

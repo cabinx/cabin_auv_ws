@@ -20,8 +20,11 @@ add_executable(t4_controller src/t4_controller.cpp)
 target_link_libraries(t4_controller
    ${catkin_LIBRARIES}
 )
+add_dependencies(t4_controller cabin_msgs_gencpp)
+
 add_executable(logicool_controller src/logicool_controller.cpp)
 target_link_libraries(logicool_controller
    ${catkin_LIBRARIES}
 )
+add_dependencies(logicool_controller cabin_msgs_gencpp)
 

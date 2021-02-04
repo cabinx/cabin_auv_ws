@@ -8,14 +8,14 @@
   As the test environment, the ground pc is ubuntu 18.04, and the raspberry 3B on the bluerov is ubuntu mate 18.04. The ros version is melodic.
 
   
-  ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/yaw.gif)![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/sink.gif)
+  ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/src/image/yaw.gif)![image](https://github.com/cabinx/cabin_auv_ws/blob/master/src/image/sink.gif)
      
   
   The whole software framwork as below:
- ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/Vision_Frame.png)
+ ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/src/image/Vision_Frame.png)
    
                                    The vision module
- ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/image/Control_Frame.png)
+ ![image](https://github.com/cabinx/cabin_auv_ws/blob/master/src/image/Control_Frame.png)
    
                                 The base control module
   
