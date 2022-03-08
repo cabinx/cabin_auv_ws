@@ -19,7 +19,7 @@
    
                                 The base control module
   
-  cabin_controllers: The movement module. This module refer from the Ohio State University Underwater Robotics Team's project. For more information: https://github.com/osu-uwrt/riptide_setup
+  cabin_controllers: The movement module. This module refer from the Ohio State University Underwater Robotics Team's project. For more information: https://org.osu.edu/osu-uwrt/, https://github.com/osu-uwrt
   
   cabin_teleop: Manual mode. Control the rov with a joystick.
   
